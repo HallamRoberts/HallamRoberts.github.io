@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="utf-8">
 		<title>Hallam Roberts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		body, html {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: url("img.jpg") no-repeat center center fixed; 
+			background-size: 100% 100%;
+		}
+		</style>
+		<script>
+		function play() {
+			document.getElementById("music").play();
+		}
+		</script>
 	</head>
-	<body>
-		<h1>test</h1>
+	<body onclick="play();">
+		<audio id="music" autoplay loop>
+			<source src="music.ogg" type="audio/ogg">
+			<source src="music.mp3" type="audio/mpeg">
+		</audio>
 	</body>
 </html>
